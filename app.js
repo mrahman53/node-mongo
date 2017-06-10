@@ -5,7 +5,7 @@ var port = process.env.PORT || 3000;
 var messageRouter = express.Router();
 messageRouter.route('/message')
     .get(function (req, res) {
-        var responseJson = {hello: "this is api"};
+        var responseJson = {hello: "this is api !"};
         res.json(responseJson);
     });
 app.use('/api', messageRouter);
